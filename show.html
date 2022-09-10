@@ -22,11 +22,11 @@
 
         <div class="menubar">
           <ul class="menu">
-            <li class="selected"><a href="#">Главная</a></li>
-            <li><a href="./films.html">Фильмы</a></li>
+            <li><a href="/index.html">Главная</a></li>
+            <li class="selected"><a href="/films.html">Фильмы</a></li>
             <li><a href="#">Сериалы</a></li>
             <li><a href="./rating.html">Рейтинг фильмов</a></li>
-            <li><a href="./kontakt.html">Контакты</a></li>
+            <li><a href="/kontakt.html">Контакты</a></li>
           </ul>
         </div>
       </header>
@@ -92,57 +92,66 @@
           </div>
         </div>
 
-        <div class="content">
-          <h1>Новые фильмы</h1>
-          <div class="films_block">
-            <a href="#"><img src="./img/matrix.png" alt="" /></a>
-            <a href="#"><img src="./img/max.png" alt="" /></a>
-            <a href="#"><img src="./img/inter.png" alt="" /></a>
-            <a href="#"><img src="./img/cloud.png" alt="" /></a>
+        <div class="content"></div>
+        <h1>Интерстеллар</h1>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/qcPfI0y7wRU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <div class="info_film_page">
+          <span class="label">Рейтинг: </span>
+          <span class="value">8.1 / 10</span>
+          <span class="label">Год: </span>
+          <span class="value">2014</span>
+          <span class="label">Режисер: </span>
+          <span class="value">Кристофер Нолан</span>
+        </div>
+
+        <hr />
+
+        <h2>Описание Интерстеллар</h2>
+        <div class="description_film">
+          <img src="./img/inter.png" alt="" />
+          Когда засуха приводит человечество к продовольственному кризису,
+          коллектив исследователей и учёных отправляется сквозь червоточину
+          (которая предположительно соединяет области пространства-времени через
+          большое расстояние) в путешествие, чтобы превзойти прежнее ограничения
+          для космических путешествий человека и переселить человечество на
+          другую планету.
+        </div>
+
+        <hr />
+
+        <h2>Отзывы об Интерстеллар</h2>
+
+        <div class="review">
+          <div class="review_name">Сергей</div>
+          <div class="review_text">
+            Отличный фильм 3 часа пролетели незаметно.
           </div>
         </div>
 
-        <div class="content">
-          <h1>Новые сериалы</h1>
-          <div class="films_block">
-            <a href="#"><img src="./img/dead.png" alt="" /></a>
-            <a href="#"><img src="./img/silicon.png" alt="" /></a>
-            <a href="#"><img src="./img/breakingbad.png" alt="" /></a>
-            <a href="#"><img src="./img/xfiles.png" alt="" /></a>
+        <div class="review">
+          <div class="review_name">Дмитрий</div>
+          <div class="review_text">
+            После фильма Начало, я с не терпением ждал еще работ от Кристофера
+            Нолана. Интерстеллар меня впечатлил.
           </div>
         </div>
 
-        <div class="posts">
-          <hr />
-          <h2><a href="#">Как снимали Интерстеллар</a></h2>
-          <div class="posts_content">
-            <p>
-              45 лет исполнилось Кристоферу Нолану - одному из самых успешных
-              режиссеров нашего времени, чьи работы одинаково любимы как
-              взыскательными критиками, так и простыми зрителями. Фильмом
-              изначально занималась студия Paramount. Когда Кристофер Нолан
-              занял место режиссера, студия Warner Bros., которая выпускала его
-              последние фильмы, добилась участия в проекте.
-            </p>
-          </div>
-          <p><a href="#">читать</a></p>
-        </div>
-
-        <div class="posts">
-          <hr />
-          <h2>
-            <a href="#">Актер Том Хенкс поделился впечатлением о фестивале</a>
-          </h2>
-          <div class="posts_content">
-            <p>
-              16 февраля в Лондоне состоялась 67-я церемония вручения наград
-              Британской киноакадемии Леонардо ДиКаприо, Брэд Питт, Анджелина
-              Джоли, Кейт Бланшетт, Хелен Мирреи, Эми Адамс, Кристиан Бэйл,
-              Альфонсо Куарон и другие гости и победители премии - в нашем
-              репортаже.
-            </p>
-          </div>
-          <p><a href="#">читать</a></p>
+        <div class="send">
+          <form method="post" action="#" id="review">
+            <input type="text" name="review_name" placeholder="Ваше имя" />
+            <textarea name="review_text"></textarea>
+            <input type="submit" value="Отправить" />
+          </form>
         </div>
       </div>
     </div>
